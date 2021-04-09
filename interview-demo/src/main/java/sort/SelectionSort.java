@@ -1,6 +1,8 @@
 package sort;
 
 /**
+ * 选择排序
+ *
  * @author zhangzichen
  * @date 2021/03/08 17:05
  */
@@ -15,16 +17,18 @@ public class SelectionSort {
                     array[i] = array[j];
                     array[j] = temp;
                 }
-            }            // 打印每趟排序结果
+            }
+            // 打印每趟排序结果
             for (int m = 0; m <= array.length - 1; m++) {
                 System.out.print(array[m] + "\t");
             }
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
         SelectionSort selectionSort = new SelectionSort();
-        int[] array = { 5, 69, 12, 3, 56, 789, 2, 5648, 23 };
+        int[] array = {5, 69, 12, 3, 56, 789, 2, 5648, 23};
         selectionSort.selectionSort(array);
         for (int m = 0; m <= array.length - 1; m++) {
             System.out.print(array[m] + "\t");

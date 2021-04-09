@@ -8,7 +8,7 @@ package epsiode1;
  */
 public class Singleton2 {
     /**
-     * 静态类不类
+     * 静态内部类
      */
     private static class SingletonHolder{
         private static Singleton2 instance = new Singleton2();

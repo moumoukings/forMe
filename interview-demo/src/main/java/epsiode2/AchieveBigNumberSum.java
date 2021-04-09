@@ -65,13 +65,13 @@ public class AchieveBigNumberSum {
         }
 
         //拼接处理好的大数和 todo 从后往前
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder builder = new StringBuilder();
         for (int i = sums.length - 1; i >= 0; i--) {
-            stringBuffer.append(sums[i]);
+            builder.append(sums[i]);
         }
 
         //判断最高位有没有进位,如果最高位是0说明没有进位
-        String result = stringBuffer.toString();
+        String result = builder.toString();
         if(result.startsWith("0")){
             result.substring(1);
         }

@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * 在字符串中查出第一个只出现一次的字符
+ * 在字符串中查出第一个只出现一次的字符 todo 不完善
  *
  * @author zhangzichen
  * @date 2021/04/08 17:23
