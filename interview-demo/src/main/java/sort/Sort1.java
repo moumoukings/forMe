@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 冒泡排序
+ * 冒泡排序 O(n²)
  *
  * @author zhangzichen
  * @date 2021/04/09 16:04

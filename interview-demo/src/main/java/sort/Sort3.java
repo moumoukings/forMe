@@ -1,7 +1,9 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
- * 插入排序
+ * 插入排序 O(n)
  *
  * @author zhangzichen
  * @date 2021/04/09 16:22
@@ -33,5 +35,22 @@ public class Sort3 {
         for (int m = 0; m <= array.length - 1; m++) {
             System.out.print(array[m] + "\t");
         }
+        System.out.println();
+        int[] ints = sort6(array);
+        System.out.println(Arrays.toString(ints));
+    }
+
+    public static int[] sort6(int[] array) {
+        int temp;
+        for (int i = 1; i < array.length; i++) {
+            temp = array[i];
+            int j = i;
+            while (j > 0 && array[j - 1] >= temp) {
+                array[j] = array[j - 1];
+                j--;
+            }
+            array[j] = temp;
+        }
+        return array;
     }
 }

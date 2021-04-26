@@ -1,7 +1,7 @@
 package sort;
 
 /**
- * 选择排序
+ * 快速排序 O(nlog2n)
  *
  * @author zhangzichen
  * @date 2021/04/09 16:10
